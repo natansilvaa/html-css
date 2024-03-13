@@ -1,0 +1,134 @@
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a :visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::before{
+            content: "»";
+        }
+        .especial::after{
+            content: "«";
+        }
+
+        .especial{
+            background-color: rgb(102, 102, 228);
+
+        }
+
+        div{
+        background-color: lightgray;
+        border:1px solid black;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+    }
+    #d1{
+        width: 100px;
+            height: 50px;
+            margin: 30px;
+            padding: 50px;
+         =
+    }
+    
+    #d2{
+        width: 100px;
+            height: 50px;
+            margin: 30px;
+            padding: 50px;
+    }
+
+    #d3{
+            width: 100px;
+            height: 50px;
+            margin: 30px;
+            padding: 50px;
+    }
+    #d1:hover{
+        background-color: yellow;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            padding: 50px;
+        
+    }
+    #d2:hover{
+        background-color: red;
+            width: 200px;
+            height:200px;
+            margin: 50px;
+            padding: 50px;
+    }
+    #d3:hover{
+        background-color: blue;
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            padding: 50px;
+    }
+
+    #d1 > p{
+    display: none;
+    }
+    #d1:hover > p{
+        display: block;
+    }
+
+    #d2 > p{
+    display: none;
+    }
+    #d2:hover > p{
+        display: block;
+        color: aliceblue;
+    }
+
+    #d4{
+        width: 300px;
+        height: 50px;
+      
+    }
+    #d4 > p {
+            display: none;
+        }
+
+        #d4:hover > p {
+            background-color: rgb(255, 0, 0);
+            display: block;
+            color: white;
+
+        }
+
+        #d4:hover{
+            color: rgb(60, 13, 148);
+            padding:;
+        }
+        #d4{
+            padding: 30PX;
+            width: 100PX;
+            height: 50PX;
+           
+        }
+        #d4 > p{
+            width: 100px;
+            height: 50px;
+            margin: 80px;
+            padding: 50px;
+            
+           
+        }
+        
