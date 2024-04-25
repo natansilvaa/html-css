@@ -9,15 +9,20 @@
 <style>
     body{
         font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 0, 0.514);
     }
+    
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+       
     }
 
     caption{
         background-color: rgba(0, 128, 0, 0.692);
         padding: 10px;
+        border-radius: 20px 20px 0px 0px;
         
     }
     td, th{
@@ -37,6 +42,11 @@
         color: white;
     }
 
+    thead > tr > th{
+        background-color:  rgb(0, 0, 255);
+        position: sticky;
+        top: -1px;
+    }
    
 </style>
 <body>
@@ -46,8 +56,10 @@
             <strong>População das unidades federativas</strong>
         </caption>
         <thead>
-           <th scope="col">estado</th>
-           <th scope="col" style="width: 100px;">população</th>
+           <tr>
+               <th scope="col">estado</th>
+               <th scope="col" style="width: 100px;">população</th>
+           </tr>
         </thead>
         <tbody>
             <tr>
@@ -166,5 +178,6 @@
             </tr>
         </tfoot>
     </table>
+    
 </body>
 </html>
