@@ -14,6 +14,12 @@
         width: 500px;
         border-collapse: collapse;
     }
+
+    caption{
+        background-color: rgba(0, 128, 0, 0.692);
+        padding: 10px;
+        
+    }
     td, th{
         border: 1px solid black;
         padding: 10px;
@@ -22,8 +28,12 @@
         text-align: right;
     }
 
+    tbody >tr:nth-child(odd){
+        background-color: rgba(255, 255, 0, 0.13);
+    }
+
     thead, tfoot{
-        background-color: darkslategray;
+        background-color: rgba(0, 0, 255, 0.541);
         color: white;
     }
 
@@ -32,9 +42,12 @@
 <body>
     <h1>tabelas grandes </h1>
     <table>
+        <caption>
+            <strong>População das unidades federativas</strong>
+        </caption>
         <thead>
-           <th>estado</th>
-           <th>populsção</th>
+           <th scope="col">estado</th>
+           <th scope="col" style="width: 100px;">população</th>
         </thead>
         <tbody>
             <tr>
@@ -148,7 +161,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>total de habitantes</td>
+                <th scope="row">total de habitantes</th>
                 <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
